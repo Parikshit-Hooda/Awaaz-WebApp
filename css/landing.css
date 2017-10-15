@@ -10,9 +10,6 @@ html{
     color: #3d4250;
 }
 
-.header-content{
-    height: 800px;
-}
 .header-content .container{
     position: relative;
     top: 50%;
@@ -39,4 +36,95 @@ html{
     right:-10px;
     margin-top: 2px;
     width: 100%;
+}
+
+.feature-img{
+    width: 70px !important;
+}
+
+.feature-title{
+    font-family: 'Questrial', sans-serif;
+    font-size: 2.2rem;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.feature-text{
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    color: #6F749A;
+}
+
+/* Testing SVG Section Seperator */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+*, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    padding: 10em;
+    background: teal;
+    color: #fff;
+    text-align: center;
+}
+
+section::before,
+section::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.color {
+    background: #005c5c;
+}
+
+#curveDownColor path {
+    fill: #FFC662;
+    stroke: #FFC662;
+}
+
+#curveUpColor path {
+    fill: #FA476F;
+    stroke: #FA476F;
+}
+
+.works-title{
+    font-family: 'Questrial', sans-serif;
+    font-size: 2rem;
+    opacity: 0.8;
+    font-weight: 600;
+    margin-top: -60px;
+}
+
+.works-text{
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2rem;
+    color: #6F749A;
+}
+
+.works-img{
+    height: 200px;
+    margin-top: 60px;
+}
+
+.works-num{
+    font-size: 50px;
+    color: #AEEC73;
+}
+
+.testimonials{
+    margin-top: -5px;
+    background-color: #FA476F;
+}
+
+.testimonial-container{
+    background: #FA476F;
+}
+
+footer{
+    background: #3ECADD !important;
 }
