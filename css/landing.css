@@ -1,0 +1,42 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-content .title{
+    font-size: 2.625rem;
+    margin: 0 0 1.3125rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #3d4250;
+}
+
+.header-content{
+    height: 800px;
+}
+.header-content .container{
+    position: relative;
+    top: 50%;
+}
+
+.header-content .title-body{
+    line-height: 140%;
+    color: #6f749a;
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+
+.header-content button{
+    border-radius: 500px;
+    height: 45px;
+}
+.header-content button:hover{
+    background-color: #51CFE0;
+    opacity: 0.85;
+}
+
+#header-img{
+    position: relative;
+    right:-10px;
+    margin-top: 2px;
+    width: 100%;
+}
