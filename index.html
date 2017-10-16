@@ -1,0 +1,134 @@
+ <!DOCTYPE html>
+  <html>
+   <head>
+      <title>Registration Form</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+
+
+
+
+   </head>
+   
+   <body class = "container"> 
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=696681577169884";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+ 
+
+
+
+      <div class = "row">
+         <form class = "col s12">
+            <div class = "row">
+               <div class = "input-field col s6">
+                  <i class = "material-icons prefix">account_circle</i>
+                  <input placeholder = "Name"  id = "name"
+                     type = "text" class = "active validate" required />
+                  <label for = "name">Name</label>
+               </div>
+               
+               <div class = "input-field col s6">      
+                  <label for = "password">Password</label>
+                  <input id = "password" type = "password" placeholder = "Password"
+                     class = "validate" required />          
+               </div>
+            </div>
+            
+            <div class = "row">
+               <div class = "input-field col s12">
+                                 <i class = "material-icons prefix">email</i>
+
+                  <input placeholder = "Email" id = "email" type = "email"
+                     class = "validate">
+                  <label for = "email">Email</label>
+               </div>
+            </div>
+            
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <i class = "material-icons prefix">date_range</i>
+                <input placeholder="Date of Birth" type="text" class="datepicker">
+                  <label for = "Date Of Birth">Date of Birth</label>
+               </div>
+            </div>
+            
+          
+
+            
+            <div class = "row">
+               <div class = "input-field col s12">
+
+            <h5>Gender</h5>            
+       <p>
+                     <input id = "male" type = "radio" name = "gender"
+                        value = "male"  />
+                     <label for = "male">Male</label>
+                  </p>
+                  
+                  <p>
+                     <input id = "female" type = "radio" name = "gender"
+                        value = "female"  />
+                     <label for = "female">Female</label>
+                  </p>
+                  
+                  <p>
+                     <input id = "dontknow" type = "radio" name = "gender"
+                        value = "female"  />
+                     <label for = "dontknow">Don't wanna state</label>
+                  </p>
+               </div>
+            </div>     
+            <center>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+  </center>
+
+<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+         </form>       
+      </div>
+   
+
+
+<script type="text/javascript">
+  
+$('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 85, // Creates a dropdown of 15 years to control year,
+    today: '',
+    
+    close: 'Ok',
+    clear: 'Clear',
+    closeOnSelect: false // Close upon selecting a date,
+  });
+  </script>
+
+  <script type="text/javascript">
+    
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+    
+  </script>
+
+
+   </body>   
+</html>
