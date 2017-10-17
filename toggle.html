@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <style>
 .switch {
   position: relative;
@@ -33,8 +34,6 @@
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
-
-  content: "Reeee";
 }
 
 input:checked + .slider {
@@ -59,17 +58,53 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+
+.active {
+    display: block;
+}
+
+div {
+    display: none;
+}
+
 </style>
+
+ <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>    
+
+
+
 </head>
 <body>
 
 <h2>Toggle Switch</h2>
 
 
-<label class="switch">
-  <input type="checkbox">
+<label class="switch" >
+  <input type="checkbox" id="change">
   <span class="slider round"></span>
 </label>
+
+
+<div class = "active">THis is div 1</div>
+<div>This is div 2</div>
+
+
+<script type="text/javascript">
+           
+$('#change').on('click', function() { 
+    $('div').each(function() { 
+        if($(this).hasClass('active')) { 
+            $(this).removeClass('active');
+        } else { 
+            $(this).addClass('active');
+        }
+    });
+});
+           
+         </script>
+
 
 
 
